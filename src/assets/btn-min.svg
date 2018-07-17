@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <line id="btn-min" class="cls-1" x1="13" transform="translate(0 1)"/>
+</svg>

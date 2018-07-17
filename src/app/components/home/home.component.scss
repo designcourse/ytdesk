@@ -1,17 +1,88 @@
 .container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: 34px auto auto;
 
-  background: url(../../../assets/background.jpg) no-repeat center fixed;
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
+  header {
+    display: grid;
+    grid-template-columns: 85% auto;
+    padding: 8px;
+    background-color: #3a3a3a;
 
-  .title {
-    color: white;
-    margin:0;
-    padding:50px 20px;
+    strong {
+      -webkit-app-region: drag;
+      color: #fff;
+
+      span {
+        color: red;
+      }
+    }
+
+    nav {
+      justify-self: right;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          float: left;
+          margin-left: 8px;
+
+          img {
+            width: 12px;
+            cursor: pointer;
+          }
+          img#min {
+            padding: 10px;
+          }
+        }
+      }
+    }
   }
 
+  input {
+    background-color: #DBDBDB;
+    border: 0;
+    padding: 12px;
+    color: gray;
+    font-family: 'Montserrat';
+    outline: none;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 20px;
+
+    figure {
+      margin: 0;
+
+      img {
+        border-radius: 50%;
+        float: left;
+        width: 50px;
+        margin-right: 10px;
+      }
+
+      figcaption {
+        margin-top: 14px;
+      }
+    }
+
+    .stats {
+      justify-self: right;
+
+      strong {
+        font-size: 2.2em;
+        display: block;
+      }
+
+      span {
+        color: gray;
+        font-size: .8em;
+        float: right;
+      }
+    }
+  }
 }
